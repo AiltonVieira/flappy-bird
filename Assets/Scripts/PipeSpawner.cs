@@ -14,7 +14,7 @@ public class PipeSpawner : MonoBehaviour
         if (timer > spawnRate)
         {
             timer = 0;
-            Instantiate(pipe, new Vector3(transform.position.x, UnityEngine.Random.Range(minY, maxY)), quaternion.identity);
+            Instantiate(pipe, new Vector3(transform.position.x, UnityEngine.Random.Range(minY, maxY)), quaternion.identity, this.transform);
         }
     }
 }
