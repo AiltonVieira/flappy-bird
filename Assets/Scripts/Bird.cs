@@ -8,6 +8,7 @@ public class Bird : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        rb.rotation += rb.linearVelocityY * 0.02f;
         if (Input.GetKeyDown(KeyCode.Space))
         {
             rb.linearVelocity = new Vector2(rb.linearVelocityX, 0.0f);

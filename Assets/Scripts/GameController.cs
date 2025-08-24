@@ -8,5 +8,6 @@ public class GameController : MonoBehaviour
     {
         scoreController.ResetScore();
         SceneManager.LoadScene(0);
+        
     }
 }

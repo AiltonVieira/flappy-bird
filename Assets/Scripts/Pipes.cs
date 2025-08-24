@@ -27,7 +27,7 @@ public class Pipes : MonoBehaviour
     {
         if (collider.CompareTag("Player"))
         {
-            scoreController.UpdateScore(1);
+            scoreController.UpdateScore(Mathf.RoundToInt(speed/5));
         }
     }
 }
